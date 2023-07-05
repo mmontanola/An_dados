@@ -27,7 +27,6 @@ import sweetviz as sv
 from funcoes_graficos import *
 import pandas as pd
 import numpy as np
-import pmdarima as pm
 from matplotlib import pyplot as plt
 
 
