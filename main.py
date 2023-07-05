@@ -11,8 +11,8 @@ import pandas as pd
 # Carregue seus dados aqui
 @st.cache_data(ttl=3600)
 def load_data():
-    # df_completo = pd.read_excel(fr'C:\Users\matheus.montanola\PycharmProjects\Oficial_An_dados\completa.xlsx',engine='openpyxl')
-    df_completo = Tratamento().tratamento_inicial_merge()
+    df_completo = pd.read_excel(fr'completa.xlsx',engine='openpyxl')
+    # df_completo = Tratamento().tratamento_inicial_merge() # em PRD
     return df_completo
 
 df_completo = load_data()
