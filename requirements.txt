@@ -1,0 +1,11 @@
+pandas
+deep_translator
+seaborn
+ydata_profiling
+sweetviz
+streamlit
+plotly
+openpyxl
+plotly
+statsmodels
+pandas
