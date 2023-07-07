@@ -46,7 +46,7 @@ def agrupamento_e_contar(coluna_agrupamento, operacao, coluna_conta, tabela_ou_g
         st.plotly_chart(fig, use_container_width=True)
 
 
-# @st.cache_resource
+@st.cache_resource
 def agrupamento_de_datas_e_categorias(coluna_agrupamento, operacao, coluna_conta, periodo, tabela_ou_grafico):
     # df_completo['shipping_limit_date'] = pd.to_datetime(df_completo['shipping_limit_date'])
 
