@@ -171,7 +171,8 @@ def page_graficos_tabelas():
     }
 
     func = st.sidebar.selectbox('Selecione a função:', list(func_map.keys()))
-    func_map[func](coluna_agrupamento, operacao, coluna_conta, tabela_ou_grafico)
+    func_map[func](coluna_agrupamento, operacao, coluna_conta, periodo, tabela_ou_grafico)
+
 
 
 def page_previsao_precos():
