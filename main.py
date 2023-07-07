@@ -8,7 +8,6 @@ from pandas.tseries.offsets import DateOffset
 import streamlit as st
 import pandas as pd
 
-# Carregue seus dados aqui
 @st.cache_data(ttl=3600)
 def load_data():
     df_completo = pd.read_excel(fr'completa.xlsx',engine='openpyxl')
@@ -47,7 +46,7 @@ def agrupamento_e_contar(coluna_agrupamento, operacao, coluna_conta, tabela_ou_g
         st.plotly_chart(fig, use_container_width=True)
 
 
-@st.cache_resource
+# @st.cache_resource
 def agrupamento_de_datas_e_categorias(coluna_agrupamento, operacao, coluna_conta, periodo, tabela_ou_grafico):
     # df_completo['shipping_limit_date'] = pd.to_datetime(df_completo['shipping_limit_date'])
 
@@ -193,8 +192,6 @@ def page_previsao_precos():
     st.subheader('Gráfico de previsão')
     plot_forecast(train, forecast)
 
-    # Adicione aqui o código para a página de previsão de preços
-
 def page_anotacoes():
     st.title('Anotações')
 
@@ -208,12 +205,7 @@ def page_anotacoes():
     # Atualiza st.session_state['notes'] com qualquer novo texto que o usuário tenha inserido
     st.session_state['notes'] = notes
 
-    # Adicione aqui o código para a página de anotações
-
-# Configuração da página
-# st.set_page_config(layout='wide')
-
-# Adicione as páginas ao Streamlit
+# Páginas ao Streamlit
 pages = {
     'Informações Gerais': page_informacoes_gerais,
     'Gráficos e Tabelas': page_graficos_tabelas,
