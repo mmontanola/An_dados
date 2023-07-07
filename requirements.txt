@@ -1,4 +1,4 @@
-pandas
+pandas == 2.0
 deep_translator
 seaborn
 ydata_profiling
